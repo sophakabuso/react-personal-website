@@ -57,7 +57,7 @@ function Header() {
   return (
     <HeaderContainer>
       <div>
-        <Heading>Your Name</Heading>
+        <Heading>Sophakama Buso</Heading>
         <Tagline>Mobile & Web Developer</Tagline>
       </div>
       <Nav>
@@ -77,8 +77,10 @@ function Header() {
           {/* Add links to other pages */}
         </ul>
         {/* Use the primary attribute as needed */}
-        <StyledButton primary={true}>Primary Button</StyledButton>
+        <StyledButton primary="true">Primary Button</StyledButton>
         <StyledButton>Secondary Button</StyledButton>
+
+
       </Nav>
     </HeaderContainer>
   );

@@ -1,4 +1,3 @@
-// Skills.js
 import React from 'react';
 import Layout from './Layout';
 import styled from 'styled-components';
@@ -34,4 +33,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Skills; // Ensure you have this export statement at the end
