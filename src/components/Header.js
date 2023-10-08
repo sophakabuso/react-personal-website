@@ -3,6 +3,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faSlack, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const HeaderContainer = styled.header`
   background-color: #007bff;
@@ -53,6 +55,24 @@ const StyledButton = styled.button`
   }
 `;
 
+const SocialLinks = styled.div`
+  display: flex;
+  gap: 20px;
+
+  a {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+`;
+
+const socialLinks = [
+  { icon: faTwitter, url: 'https://twitter.com/SophaBuso/' },
+  { icon: faSlack, url: 'https://app.slack.com/client/T04M928TTMF/C04ML3U7DJLom/' },
+  { icon: faFacebook, url: 'https://web.facebook.com/?_rdc=1&_rdr/' },
+  { icon: faGithub, url: 'https://github.com/sophakabuso' },
+  { icon: faLinkedin, url: 'https://www.linkedin.com/in/sophakama-buso-2a9191103/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BeI%2FqN7XGSjOIIVcam21XIg%3D%3D' },
+];
+
 function Header() {
   return (
     <HeaderContainer>
@@ -60,28 +80,14 @@ function Header() {
         <Heading>Sophakama Buso</Heading>
         <Tagline>Mobile & Web Developer</Tagline>
       </div>
-      <Nav>
-        <ul>
-          <li>
-            <Link to="/skills">Skills</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/experience">Experience</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          {/* Add links to other pages */}
-        </ul>
-        {/* Use the primary attribute as needed */}
-        <StyledButton primary="true">Primary Button</StyledButton>
-        <StyledButton>Secondary Button</StyledButton>
-
-
-      </Nav>
+     
+      <SocialLinks>
+        {socialLinks.map((link, index) => (
+          <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={link.icon} />
+          </a>
+        ))}
+      </SocialLinks>
     </HeaderContainer>
   );
 }
