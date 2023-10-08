@@ -1,27 +1,28 @@
 // About.js
 import React from 'react';
-import Layout from './Layout';
+
 import styled from 'styled-components';
 
 const AboutContainer = styled.section`
   padding: 20px;
+  background-color: #007bff;
 `;
 
 const AboutText = styled.p`
   font-size: 1rem;
 `;
 
-function About() {
+function AboutMe() {
   return (
-    <Layout>
+    
       <AboutContainer>
         <h2>About Me</h2>
         <AboutText>
-          Provide a brief introduction about yourself, your background, and your interests here.
+        "Hello! I'm an enthusiastic junior web and mobile developer trainee with a relentless commitment to ongoing learning in the dynamic tech landscape. My primary focus is on refining my expertise in React.js, React Native, JavaScript, and Node.js, and I'm deeply engaged in practical development projects at MLab Southern Africa."
         </AboutText>
       </AboutContainer>
-    </Layout>
+   
   );
 }
 
-export default About;
+export default AboutMe;

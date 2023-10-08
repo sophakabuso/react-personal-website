@@ -13,6 +13,7 @@ const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%; /* Add this line to make the header span the entire width */
 `;
 
 const Heading = styled.h1`
