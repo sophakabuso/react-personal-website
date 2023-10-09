@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Skills from '../components/Skills';
 
 const NavigatorContainer = styled.header`
   background-color: grey;
@@ -39,20 +40,9 @@ const Nav = styled.nav`
   }
 `;
 
-const StyledButton = styled.button`
-  background-color: ${props => (props.primary ? '#007bff' : '#fff')};
-  color: ${props => (props.primary ? '#fff' : '#007bff')};
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 
-  &:hover {
-    background-color: ${props => (props.primary ? '#0056b3' : '#cceeff')};
-  }
-`;
 
-function Header() {
+function Navigator() {
   return (
     <NavigatorContainer>
       <div>
@@ -76,11 +66,10 @@ function Header() {
           {/* Add links to other pages */}
         </ul>
         {/* Use the primary attribute as needed */}
-        <StyledButton primary="true">Primary Button</StyledButton>
-        <StyledButton>Secondary Button</StyledButton>
+       
       </Nav>
     </NavigatorContainer>
   );
 }
 
-export default Header;
+export default Navigator;

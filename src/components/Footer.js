@@ -1,14 +1,10 @@
-
-
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faSlack, faFacebook, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
-const HeaderContainer = styled.header`
+const FooterContainer = styled.footer`
   background-color: #007bff;
   color: #fff;
   padding: 20px;
@@ -76,12 +72,12 @@ const socialLinks = [
   { icon: faLinkedin, url: 'https://www.linkedin.com/in/sophakama-buso-2a9191103/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BeI%2FqN7XGSjOIIVcam21XIg%3D%3D' },
 ];
 
-function Header() {
+function Footer() {
   return (
-    <HeaderContainer>
+    <FooterContainer>
       <div>
-        <Heading>Sophakama Buso</Heading>
-        <Tagline>Mobile & Web Developer</Tagline>
+        <Heading>SoB</Heading>
+        <Tagline>Dev</Tagline>
       </div>
      
       <SocialLinks>
@@ -91,8 +87,8 @@ function Header() {
           </a>
         ))}
       </SocialLinks>
-    </HeaderContainer>
+    </FooterContainer>
   );
 }
 
-export default Header;
+export default Footer;

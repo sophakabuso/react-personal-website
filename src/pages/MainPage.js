@@ -6,6 +6,8 @@ import Navigator from '../navigator/Navigator';
 import AboutMe from '../components/AboutMe';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import Skills from '../components/Skills';
 
 const MainPageContainer = styled.div`
   background-color: #f0f0f0;
@@ -29,6 +31,8 @@ function MainPage() {
         <AboutMe />
         <Navigator />
       </ContentContainer>
+      
+      <Footer/>
     </MainPageContainer>
   );
 }

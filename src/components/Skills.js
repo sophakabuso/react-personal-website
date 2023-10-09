@@ -24,8 +24,8 @@ function Skills() {
       <SkillsContainer>
         <h2>Skills</h2>
         <SkillList>
-          {skills.map((skill, index) => (
-            <SkillItem key={index}>{skill}</SkillItem>
+          {skills.map((skills, index) => (
+            <SkillItem key={index}>{skills}</SkillItem>
           ))}
         </SkillList>
       </SkillsContainer>
