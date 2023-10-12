@@ -19,13 +19,13 @@ function Routes() {
         <Route exact path="/" component={MainPage} /> {/* Define your routes */}
         <Route path = "aboutMe" component={AboutMe} />
         <Route path = "contact" component={Contact} />
-        <Route path = "aboutMe" component={Education} />
-        <Route path = "aboutMe" component={Experience} />
-        <Route path = "aboutMe" component={Header} />
+        <Route path = "education" component={Education} />
+        <Route path = "expiriecne" component={Experience} />
+        <Route path = "header" component={Header} />
         <Route path = "/portfolio" component={Portfolio} />
         <Route path = "/skills" component={Skills} />
-        <Route path = "aboutMe" component={Navigator} />
-        <Route path = "aboutMe" component={AboutMe} />
+        <Route path = "navigator" component={Navigator} />
+     
         {/* Add more routes for other components */}
    
     </Router>

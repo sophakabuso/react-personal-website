@@ -63,6 +63,10 @@ function Navigator() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/education">Education</Link>
+          </li>
+           
           {/* Add links to other pages */}
         </ul>
         {/* Use the primary attribute as needed */}
